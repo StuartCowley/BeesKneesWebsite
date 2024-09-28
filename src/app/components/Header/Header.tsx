@@ -1,8 +1,7 @@
 export default function Header() {
   return (
-    <div>
-        Some header
-    </div>
+    <header>
+      Site header
+    </header>
   );
 }
-  
