@@ -1,0 +1,47 @@
+// Colors ===================
+$mainGold: rgb(255, 136, 0);
+$offWhite: rgb(233, 233, 233);
+$almostBlack: rgb(20, 20, 20);
+$offBlack: rgb(60, 60, 60);
+$white: rgb(255, 255, 255);
+$black: rgb(0, 0, 0);
+
+// Typography
+$base-font-weight: 300;
+$base-font-color: $black;
+$base-font-size: 10;
+
+// Limits
+$min-width: 320px;
+$page-width: 1500px;
+$page-padding: 56px;
+
+// Breakpoints
+$breakpoint-max-width: 1500px;
+$breakpoint-desk: 1440px;
+$breakpoint-ltab: 1024px;
+$breakpoint-ptab: 767px;
+$breakpoint-mob: 480px;
+
+// Header
+$logo-width: 100px;
+$logo-width-small: $logo-width / 2;
+$logo-padding: 16px;
+$logo-padding-small: $logo-padding / 2;
+
+$header-height: 80px;
+$header-height-small: 64px;
+
+.page-container {
+  max-width: $page-width;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 2rem;
+  padding-right: 2rem;
+  width: 100%;
+  box-sizing: border-box;
+  @media screen and (max-width: $breakpoint-mob) {
+    padding-left: 0;
+    padding-right: 0;
+  }
+}
