@@ -1,11 +1,11 @@
 import styles from "./page.module.scss";
 import Footer from "../components/Footer/Footer";
 
-export default function Testimonials() {
+export default function SongList() {
   return (
     <>
       <main className={`${styles.pageContainer} ${styles.content}`}>
-        Testimonials
+        Song list
       </main>
       <Footer />
     </>

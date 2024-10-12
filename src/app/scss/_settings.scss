@@ -32,7 +32,7 @@ $logo-padding-small: $logo-padding / 2;
 $header-height: 80px;
 $header-height-small: 64px;
 
-.page-container {
+.pageContainer {
   max-width: $page-width;
   margin-left: auto;
   margin-right: auto;
@@ -40,6 +40,8 @@ $header-height-small: 64px;
   padding-right: 2rem;
   width: 100%;
   box-sizing: border-box;
+  display: flex;
+  flex: 1;
   @media screen and (max-width: $breakpoint-mob) {
     padding-left: 0;
     padding-right: 0;

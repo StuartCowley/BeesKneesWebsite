@@ -5,8 +5,8 @@ import Footer from "./components/Footer/Footer";
 
 export default function Home() {
   return (
-    <div className={styles.page}>
-      <main className={styles.main}>
+    <>
+      <main className={`${styles.pageContainer} ${styles.content}`}>
         <Image
           className={styles.logo}
           src="https://nextjs.org/icons/next.svg"
@@ -20,6 +20,6 @@ export default function Home() {
         </h1>
       </main>
       <Footer/>
-    </div>
+    </>
   );
 }
