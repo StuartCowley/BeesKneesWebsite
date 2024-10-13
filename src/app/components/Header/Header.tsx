@@ -1,6 +1,5 @@
 import Link from 'next/link';
-import Image from 'next/image';
-import beeLogo from "../../public/bee-logo.svg"
+import Bee from '../images/Bee';
 import Facebook from "../images/Facebook"
 import Email from "../images/Email"
 import styles from './header.module.scss';
@@ -9,7 +8,7 @@ export default function Header() {
   return (
     <header className={styles.header}>
       <div className={`${styles.pageContainer} ${styles.wrap}`}>
-        <Image className={styles.logo} src={beeLogo} alt='A logo showing the bands name over an image of a bee' />
+        <Bee className={styles.socialItem} height="48px" width="48px" />
         <nav className={styles.nav}>
           <Link href={'/testimonials'}>Testimonials</Link>
           <Link href={'/song-list'}>Song List</Link>
