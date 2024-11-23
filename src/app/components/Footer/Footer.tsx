@@ -1,31 +1,25 @@
 import Link from 'next/link';
 import Bee from "../images/Bee"
-import Facebook from "../images/Facebook"
-import Email from "../images/Email"
+import SocialBlock from '../SocialBlock/SocialBlock';
 import styles from "./footer.module.scss";
 
 export default function Footer() {
   return (
     <footer className={styles.footer}>
-      <div className='pageContainer'>
-        <nav className={styles.nav}>
-          <Link href={'/testimonials'}>Testimonials</Link>
-          <Link href={'/song-list'}>Song List</Link>
-          <Link href={'/contact'}>Contact</Link>
+      <div className={`${styles.pageContainer} ${styles.footer__content}`}>
+        <nav className={styles.footer__navWrap}>
+          <Link className={styles.footer__navItem} href={'/testimonials'}>Testimonials</Link>
+          <Link className={styles.footer__navItem} href={'/song-list'}>Song List</Link>
+          <Link className={styles.footer__navItem} href={'/contact'}>Contact</Link>
         </nav>
-        <div className="titleBlock">
-          <Bee className={styles.socialItem} height="48px" width="48px" />
-          <div>The Bees Knees</div>
-          <div>Professional party band</div>
-        </div>
-        <div className={styles.socialItems}>
-          <div className={styles.socialItem__wrap}>
-            <Facebook className={styles.socialItem} height="24px" width="24px" />
+        <div className={styles.footer__titleBlock}>
+          <div className={styles.footer__iconWrap}>
+            <Bee />
           </div>
-          <div className={styles.socialItem__wrap}>
-            <Email className={styles.socialItem} height="24px" width="24px" />
-          </div>
+          <div className={styles.footer__logoTitle}>The Bees Knees</div>
+          <div className={styles.footer__logoSubtitle}>Professional party band</div>
         </div>
+        <SocialBlock />
       </div>
     </footer>
   );
