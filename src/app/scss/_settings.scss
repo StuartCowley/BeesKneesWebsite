@@ -14,7 +14,7 @@ $base-font-size: 10;
 // Limits
 $min-width: 320px;
 $page-width: 1500px;
-$page-padding: 56px;
+$page-padding: 2rem;
 
 // Breakpoints
 $breakpoint-max-width: 1500px;
@@ -23,25 +23,14 @@ $breakpoint-ltab: 1024px;
 $breakpoint-ptab: 767px;
 $breakpoint-mob: 480px;
 
-// Header
-$logo-width: 100px;
-$logo-width-small: $logo-width / 2;
-$logo-padding: 16px;
-$logo-padding-small: $logo-padding / 2;
-
-$header-height: 80px;
-$header-height-small: 64px;
-
+// utility class to set vertical boundaries and padding across all pages
 .pageContainer {
   max-width: $page-width;
+  width: 100%;
+  padding-left: $page-padding;
+  padding-right: $page-padding;
   margin-left: auto;
   margin-right: auto;
-  padding-left: 2rem;
-  padding-right: 2rem;
-  width: 100%;
-  box-sizing: border-box;
-  display: flex;
-  flex: 1;
   @media screen and (max-width: $breakpoint-mob) {
     padding-left: 0;
     padding-right: 0;
