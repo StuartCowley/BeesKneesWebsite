@@ -6,35 +6,21 @@
   display: flex;
   align-items: center;
   justify-content: center;
-}
 
-.wrap {
-  justify-content: space-between;
-}
-
-.nav {
-  display: flex;
-  align-items: center;
-  gap: 1rem;
-}
-
-.socialItems {
-  display: flex;
-  gap: 0.5rem;
-}
-
-.socialItem {
   &__wrap {
-    padding-top: 10px;
-    padding-right: 10px;
-    padding-bottom: 8px;
-    padding-left: 10px;
-    border: $mainGold 2px solid;
-    border-radius: 20px;
+    display: flex;
+    flex: 1;
+    justify-content: space-between;
+    align-items: center;
   }
-  color: $mainGold;
-}
 
-.logo {
-  height: 36px;
+  &__nav {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+  }
+
+  &__iconWrap {
+    height: 50px;
+  }
 }
