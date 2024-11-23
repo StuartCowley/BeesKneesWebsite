@@ -1,0 +1,29 @@
+@import "../../scss/settings";
+
+.socialBlock {
+  display: flex;
+  gap: 0.5rem;
+  position: relative;
+
+  &__itemWrap {
+    height: 50px;
+    padding: 8px;
+    border: $mainGold 2px solid;
+    border-radius: 20px;
+    margin-right: 10px;
+    &:last-of-type {
+      margin-right: 0;
+    }
+    @media screen and (max-width: $breakpoint-ptab) {
+      height: 40px;
+      padding: 6px;
+      border-radius: 14px;
+    }
+  }
+
+  &__item {
+    height: 100%;
+    width: 100%;
+    color: $mainGold;
+  }
+}
