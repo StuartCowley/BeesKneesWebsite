@@ -1,20 +1,15 @@
 import * as React from "react"
 
-function Bee({ className, height = "96px", width = "96px"}: {
-  className: string;
-  height: string;
-  width: string;
-}) {
+function Bee() {
   return (
     <svg
       xmlns="http://www.w3.org/2000/svg"
       x="0px"
       y="0px"
-      width={width}
-      height={height}
+      width="100%"
+      height="100%"
       viewBox="0 0 76 76"
       xmlSpace="preserve"
-      className={className}
     >
       <image
         width={318}
