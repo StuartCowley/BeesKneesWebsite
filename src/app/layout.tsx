@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import Header from "./components/Header/Header";
+import Footer from "./components/Footer/Footer";
 import "./globals.scss";
 import { montserrat } from './fonts';
 
@@ -18,6 +19,7 @@ export default function RootLayout({
       <body className={montserrat.className}>
         <Header />
         {children}
+        <Footer />
       </body>
     </html>
   );
