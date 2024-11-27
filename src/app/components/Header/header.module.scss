@@ -20,7 +20,20 @@
     gap: 1rem;
   }
 
-  &__iconWrap {
-    height: 50px;
+  &__logoWrap {
+    height: 60px;
+    position: relative;
+  }
+
+  &__logoText {
+    position: absolute;
+    width: 100%;
+    top: 0;
+    color: $mainGold;
+    text-shadow: 0 0 2px #000;
+    & * {
+      line-height: 1.2rem;
+      text-align: center;
+    }
   }
 }

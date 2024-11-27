@@ -1,5 +1,4 @@
 import styles from "./page.module.scss";
-import Footer from "../components/Footer/Footer";
 
 export default function SongList() {
   return (
@@ -7,7 +6,6 @@ export default function SongList() {
       <main className={`${styles.pageContainer} ${styles.content}`}>
         Song list
       </main>
-      <Footer />
     </>
   );
 }

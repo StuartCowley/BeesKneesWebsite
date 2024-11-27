@@ -1,5 +1,4 @@
 import styles from "./page.module.scss";
-import Footer from "../components/Footer/Footer";
 
 export default function Testimonials() {
   return (
@@ -7,7 +6,6 @@ export default function Testimonials() {
       <main className={`${styles.pageContainer} ${styles.content}`}>
         Testimonials
       </main>
-      <Footer />
     </>
   );
 }

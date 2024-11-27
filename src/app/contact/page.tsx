@@ -1,5 +1,4 @@
 import styles from "./page.module.scss";
-import Footer from "../components/Footer/Footer";
 
 export default function Contact() {
   return (
@@ -7,7 +6,6 @@ export default function Contact() {
       <main className={`${styles.pageContainer} ${styles.content}`}>
         Contact
       </main>
-      <Footer />
     </>
   );
 }
