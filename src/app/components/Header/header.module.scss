@@ -18,6 +18,10 @@
     display: flex;
     align-items: center;
     gap: 1rem;
+    padding-left: 3.5rem;
+    @media screen and (max-width: $breakpoint-ptab) {
+      padding-left: 2.5rem;
+    }
   }
 
   &__logoWrap {

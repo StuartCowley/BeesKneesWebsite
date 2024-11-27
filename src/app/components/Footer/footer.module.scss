@@ -1,14 +1,17 @@
 @import "../../scss/settings";
+@import "../../scss/mixins";
 
 .footer {
   background-color: $almostBlack;
 
   &__content {
     display: flex;
+    align-items: center;
     padding-top: 3rem;
     padding-bottom: 3rem;
     @media screen and (max-width: $breakpoint-ptab) {
-      padding-top: 1.5rem;
+      flex-direction: column;
+      padding-top: 2.5rem;
       padding-bottom: 1.5rem;
     }
   }
@@ -35,21 +38,32 @@
     flex-direction: column;
     flex: 1;
     align-items: center;
-  }
-
-  &__logoTitle {
-    // @include heading; TODO add heading mixin
-    text-align: center;
-    margin-bottom: 16px;
+    color: $mainGold;
+    @media screen and (max-width: $breakpoint-ptab) {
+      margin-bottom: 2rem;
+    }
   }
 
   &__iconWrap {
     height: 50px;
   }
 
+  &__logoTitle {
+    @include heading;
+    text-align: center;
+    margin-bottom: 16px;
+  }
+
   &__logoSubtitle {
     letter-spacing: 0.4rem;
     text-align: center;
     text-transform: uppercase;
+  }
+
+  &__copyright {
+    text-align: center;
+    font-size: 0.6rem;
+    color: $offWhite;
+    padding-bottom: 1.5rem;
   }
 }
