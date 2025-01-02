@@ -1,0 +1,16 @@
+@import "../../scss/settings";
+
+.cta {
+  display: inline-block;
+  color: #e9e9e9;
+  background-color: #ff8800;
+  letter-spacing: 0.5rem;
+  text-align: center;
+  padding: 1rem 3rem;
+  border-radius: 40px;
+  text-transform: uppercase;
+  font-size: 1.6rem;
+  @media screen and (max-width: $breakpoint-mob) {
+    font-size: 1rem;
+  }
+}
