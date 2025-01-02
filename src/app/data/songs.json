@@ -1,0 +1,567 @@
+[
+  {
+    "id": 0,
+    "title": "Valerie",
+    "artist": "Amy Winehouse/The Zutons"
+  },
+  {
+    "id": 1,
+    "title": "Locked out of Heaven",
+    "artist": "Bruno Mars"
+  },
+  {
+    "id": 2,
+    "title": "Stuck in the Middle",
+    "artist": "Stealers Wheel"
+  },
+  {
+    "id": 3,
+    "title": "Sweet Home Alabama",
+    "artist": "Lynyrd Skynyrd"
+  },
+  {
+    "id": 4,
+    "title": "Sweet Child of Mine",
+    "artist": "Guns n Roses"
+  },
+  {
+    "id": 5,
+    "title": "Go Your Own Way",
+    "artist": "Fleetwood Mac"
+  },
+  {
+    "id": 6,
+    "title": "Times Like These",
+    "artist": "Foo Fighters"
+  },
+  {
+    "id": 7,
+    "title": "One Way or Another",
+    "artist": "Blondie"
+  },
+  {
+    "id": 8,
+    "title": "Knock On Wood",
+    "artist": "Eddie Floyd"
+  },
+  {
+    "id": 9,
+    "title": "A Hard Days Night",
+    "artist": "The Beatles"
+  },
+  {
+    "id": 10,
+    "title": "Living on a Prayer",
+    "artist": "Bon Jovi"
+  },
+  {
+    "id": 11,
+    "title": "Use Somebody",
+    "artist": "Kings of Leon"
+  },
+  {
+    "id": 12,
+    "title": "500 Miles",
+    "artist": "The Proclaimers"
+  },
+  {
+    "id": 13,
+    "title": "I Bet That You Look Good on the Dancefloor",
+    "artist": "Arctic Monkeys"
+  },
+  {
+    "id": 14,
+    "title": "Get Lucky",
+    "artist": "Daft Punk ft Pharrell and Nile Rodgers"
+  },
+  {
+    "id": 15,
+    "title": "It Must Be Love",
+    "artist": "Madness"
+  },
+  {
+    "id": 16,
+    "title": "Mr Brightside",
+    "artist": "The Killers"
+  },
+  {
+    "id": 17,
+    "title": "Don't Look Back In Anger",
+    "artist": "Oasis"
+  },
+  {
+    "id": 18,
+    "title": "Crazy",
+    "artist": "Gnarls Barkley"
+  },
+  {
+    "id": 19,
+    "title": "Summer of 69",
+    "artist": "Bryan Adams"
+  },
+  {
+    "id": 20,
+    "title": "I'm a Believer",
+    "artist": "The Monkees"
+  },
+  {
+    "id": 21,
+    "title": "Laid",
+    "artist": "James"
+  },
+  {
+    "id": 22,
+    "title": "Baby One More Time",
+    "artist": "Britney Spears"
+  },
+  {
+    "id": 23,
+    "title": "Whiskey in the Jar",
+    "artist": "Thin Lizzy"
+  },
+  {
+    "id": 24,
+    "title": "Wild Rover",
+    "artist": "The Dubliners"
+  },
+  {
+    "id": 25,
+    "title": "I Feel Good",
+    "artist": "James Brown"
+  },
+  {
+    "id": 26,
+    "title": "I Predict a Riot",
+    "artist": "Kaiser Chiefs"
+  },
+  {
+    "id": 27,
+    "title": "Land of 1000 Dances",
+    "artist": "Wilson Pickett"
+  },
+  {
+    "id": 28,
+    "title": "Play That Funky Music",
+    "artist": "Wild Cherry"
+  },
+  {
+    "id": 29,
+    "title": "Move On Up",
+    "artist": "Curtis Mayfield"
+  },
+  {
+    "id": 30,
+    "title": "Tainted Love",
+    "artist": "Soft Cell"
+  },
+  {
+    "id": 31,
+    "title": "You Really Got Me",
+    "artist": "The Kinks"
+  },
+  {
+    "id": 32,
+    "title": "Staying Alive",
+    "artist": "The Beegees"
+  },
+  {
+    "id": 33,
+    "title": "Lets Dance",
+    "artist": "David Bowie"
+  },
+  {
+    "id": 34,
+    "title": "I Want to Hold Your Hand",
+    "artist": "The Beatles"
+  },
+  {
+    "id": 35,
+    "title": "Starman",
+    "artist": "David Bowie"
+  },
+  {
+    "id": 36,
+    "title": "Video Killed the Radio Star",
+    "artist": "The Buggles"
+  },
+  {
+    "id": 37,
+    "title": "Billie Jean",
+    "artist": "Michael Jackson"
+  },
+  {
+    "id": 38,
+    "title": "Three Little Birds",
+    "artist": "Bob Marley"
+  },
+  {
+    "id": 39,
+    "title": "Dreaming of You",
+    "artist": "The Coral"
+  },
+  {
+    "id": 40,
+    "title": "Sweet Dreams/Seven Nation Army",
+    "artist": "Mash Up"
+  },
+  {
+    "id": 41,
+    "title": "Lovecats",
+    "artist": "The Cure"
+  },
+  {
+    "id": 42,
+    "title": "Respect",
+    "artist": "Aretha Franklin"
+  },
+  {
+    "id": 43,
+    "title": "Nutbush City Limits",
+    "artist": "Tina Turner"
+  },
+  {
+    "id": 44,
+    "title": "Eye of the Tiger",
+    "artist": "Survivor"
+  },
+  {
+    "id": 45,
+    "title": "Material Girl",
+    "artist": "Madonna"
+  },
+  {
+    "id": 46,
+    "title": "Don't Stop Me Now",
+    "artist": "Queen"
+  },
+  {
+    "id": 47,
+    "title": "Dancing in the Moonlight",
+    "artist": "Toploader"
+  },
+  {
+    "id": 48,
+    "title": "Call Me",
+    "artist": "Blondie"
+  },
+  {
+    "id": 49,
+    "title": "Don't Stop Believing",
+    "artist": "Journey"
+  },
+  {
+    "id": 50,
+    "title": "Teenage Dirtbag",
+    "artist": "Wheatus"
+  },
+  {
+    "id": 51,
+    "title": "Africa",
+    "artist": "Toto"
+  },
+  {
+    "id": 52,
+    "title": "Dancing Queen",
+    "artist": "Abba"
+  },
+  {
+    "id": 53,
+    "title": "Hey Ya",
+    "artist": "Outkast"
+  },
+  {
+    "id": 54,
+    "title": "Good Times",
+    "artist": "Chic"
+  },
+  {
+    "id": 55,
+    "title": "Hound Dog",
+    "artist": "Elvis"
+  },
+  {
+    "id": 56,
+    "title": "One Step Beyond",
+    "artist": "Madness"
+  },
+  {
+    "id": 57,
+    "title": "Dakota",
+    "artist": "Stereophonics"
+  },
+  {
+    "id": 58,
+    "title": "Blue Suede Shoes",
+    "artist": "Elvis"
+  },
+  {
+    "id": 59,
+    "title": "Uptown Funk",
+    "artist": "Mark Ronson ft Bruno Mars"
+  },
+  {
+    "id": 60,
+    "title": "Blinding Lights",
+    "artist": "The Weeknd"
+  },
+  {
+    "id": 61,
+    "title": "In the Midnight Hour",
+    "artist": "Wilson Pickett"
+  },
+  {
+    "id": 62,
+    "title": "White Wedding",
+    "artist": "Billy Idol"
+  },
+  {
+    "id": 63,
+    "title": "Blame It On The Boogie",
+    "artist": "Jackson 5"
+  },
+  {
+    "id": 64,
+    "title": "Kids in America",
+    "artist": "Kym Wilde"
+  },
+  {
+    "id": 65,
+    "title": "Rocks",
+    "artist": "Primal Scream"
+  },
+  {
+    "id": 66,
+    "title": "You Sexy Thing",
+    "artist": "Hot Chocolate"
+  },
+  {
+    "id": 67,
+    "title": "This Charming Man",
+    "artist": "The Smiths"
+  },
+  {
+    "id": 68,
+    "title": "Roxanne",
+    "artist": "The Police"
+  },
+  {
+    "id": 69,
+    "title": "Higher and Higher",
+    "artist": "Jackie Wilson"
+  },
+  {
+    "id": 70,
+    "title": "Girls Just Wanna Have Fun",
+    "artist": "Cyndi Lauper"
+  },
+  {
+    "id": 71,
+    "title": "9 to 5",
+    "artist": "Dolly Parton"
+  },
+  {
+    "id": 72,
+    "title": "At Last",
+    "artist": "Etta James"
+  },
+  {
+    "id": 73,
+    "title": "Proud Mary",
+    "artist": "Tina Turner"
+  },
+  {
+    "id": 74,
+    "title": "Everywhere",
+    "artist": "Fleetwood Mac"
+  },
+  {
+    "id": 75,
+    "title": "Friday I'm in Love",
+    "artist": "The Cure"
+  },
+  {
+    "id": 76,
+    "title": "I Wanna Dance with Somebody",
+    "artist": "Whitney Houston"
+  },
+  {
+    "id": 77,
+    "title": "Can't Take My Eyes Off You",
+    "artist": "Andy Williams"
+  },
+  {
+    "id": 78,
+    "title": "Happy",
+    "artist": "Pharrell Williams"
+  },
+  {
+    "id": 79,
+    "title": "Hotel California",
+    "artist": "The Eagles"
+  },
+  {
+    "id": 80,
+    "title": "Son of a Preacher Man",
+    "artist": "Dusty Springfield"
+  },
+  {
+    "id": 81,
+    "title": "You Can Call me Al",
+    "artist": "Paul Simon"
+  },
+  {
+    "id": 82,
+    "title": "Sex On Fire",
+    "artist": "Kings of Leon"
+  },
+  {
+    "id": 83,
+    "title": "Shut Up and Dance",
+    "artist": "Walk the Moon"
+  },
+  {
+    "id": 84,
+    "title": "Wouldn't it be Nice",
+    "artist": "The Beach Boys"
+  },
+  {
+    "id": 85,
+    "title": "Hold On I'm Comin",
+    "artist": "Sam and Dave"
+  },
+  {
+    "id": 86,
+    "title": "Pick Up The Pieces",
+    "artist": "Average White Band"
+  },
+  {
+    "id": 87,
+    "title": "Gimme Some Lovin",
+    "artist": "Spencer Davies Group"
+  },
+  {
+    "id": 88,
+    "title": "Good Thing",
+    "artist": "Fine Young Cannibals"
+  },
+  {
+    "id": 89,
+    "title": "Soul Man",
+    "artist": "Sam and Dave"
+  },
+  {
+    "id": 90,
+    "title": "Echo Beach",
+    "artist": "Martha and the Muffins"
+  },
+  {
+    "id": 91,
+    "title": "Monkey Man",
+    "artist": "Toots and the Maytals"
+  },
+  {
+    "id": 92,
+    "title": "The Joker",
+    "artist": "The Steve Miller Band"
+  },
+  {
+    "id": 93,
+    "title": "Kiss Me",
+    "artist": "Sixpence None the Richer"
+  },
+  {
+    "id": 94,
+    "title": "Tears of a Clown",
+    "artist": "The Beat (ska version)"
+  },
+  {
+    "id": 95,
+    "title": "Geno",
+    "artist": "Dexy's Midnight Runners"
+  },
+  {
+    "id": 96,
+    "title": "Come On Eileen",
+    "artist": "Dexy's Midnight Runners"
+  },
+  {
+    "id": 97,
+    "title": "Highway to Hell",
+    "artist": "AC/DC"
+  },
+  {
+    "id": 98,
+    "title": "Hava Nagila (for Jewish Celebrations)",
+    "artist": "Traditional"
+  },
+  {
+    "id": 99,
+    "title": "Simin Tov, Mazel Tov (for Jewish Celebrations)",
+    "artist": "Traditional"
+  },
+  {
+    "id": 100,
+    "title": "One Way or Another/Teenage Kicks (mashup)",
+    "artist": "Blondie/The Undertones"
+  },
+  {
+    "id": 101,
+    "title": "Superstition/Another One Bites the Dust (mashup)",
+    "artist": "Stevie Wonder/Queen"
+  },
+  {
+    "id": 102,
+    "title": "Livin La Vida Loca",
+    "artist": "Ricky Martin"
+  },
+  {
+    "id": 103,
+    "title": "Crazy Little Thing Called Love",
+    "artist": "Queen"
+  },
+  {
+    "id": 104,
+    "title": "You're my best friend",
+    "artist": "Queen"
+  },
+  {
+    "id": 105,
+    "title": "Faith",
+    "artist": "George Michael"
+  },
+  {
+    "id": 106,
+    "title": "Aint nobody",
+    "artist": "Chaka Khan"
+  },
+  {
+    "id": 107,
+    "title": "Never Too Much",
+    "artist": "Luthor Vandross"
+  },
+  {
+    "id": 108,
+    "title": "Hold The Line",
+    "artist": "Toto"
+  },
+  {
+    "id": 109,
+    "title": "Jonny B Goode",
+    "artist": "Chuck Berry"
+  },
+  {
+    "id": 110,
+    "title": "Power Of Love",
+    "artist": "Huey Lewis & The News"
+  },
+  {
+    "id": 111,
+    "title": "Sledgehammer",
+    "artist": "Peter Gabriel"
+  },
+  {
+    "id": 112,
+    "title": "Shes Electric",
+    "artist": "Oasis"
+  }
+]
