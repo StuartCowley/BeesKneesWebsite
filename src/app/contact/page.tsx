@@ -1,8 +1,14 @@
+"use client";
+
 import styles from "./page.module.scss";
+import { useRef } from "react";
+import { useFormStatus } from "react-dom";
 import TitleBlock from "@/app/components/TitleBlock/TitleBlock";
 import ContentWrap from "@/app/components/ContentWrap/ContentWrap";
 
 export default function Contact() {
+  const { pending } = useFormStatus();
+  const refForm = useRef<HTMLFormElement>(null);
   return (
     <>
       <main className={`${styles.pageContainer} ${styles.content}`}>
@@ -13,7 +19,10 @@ export default function Contact() {
               Have a question? Please get in touch!
             </div>
             <form
-              // onSubmit={(e) => e.preventDefault()}
+              ref={refForm}
+              // action={
+              //   todo
+              // }
               className={`${styles.contactForm}`}
             >
               <input type="hidden" name="enquiry_number" />
@@ -77,9 +86,7 @@ export default function Contact() {
                   name="subject"
                   id="select"
                 >
-                  <option value="" disabled selected>
-                    Select your option:
-                  </option>
+                  <option disabled>Select your option:</option>
                   <option value="Booking the band / Availability">
                     Booking the band / Availability
                   </option>
@@ -97,15 +104,14 @@ export default function Contact() {
                   name="message"
                   placeholder="Your message here..."
                   required
-                  // rows="4"
-                  v-model="message.text"
                 />
               </div>
               <div className={`${styles.contactFormElement}`}>
                 <input
+                  disabled={pending}
                   className={`${styles.contactFormSubmit}`}
                   type="submit"
-                  value="Submit"
+                  value={pending ? "Sending..." : "Submit"}
                 />
               </div>
             </form>
