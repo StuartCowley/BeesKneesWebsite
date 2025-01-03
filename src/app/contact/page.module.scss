@@ -3,10 +3,77 @@
 .content {
   display: flex;
   flex: 1;
+  gap: 1.5rem;
+  padding-top: 1.5rem;
   align-items: center;
   flex-direction: column;
   background-image: url("../public/black-hexagon-mesh.jpg");
   background-size: contain;
   background-attachment: fixed;
   background-position: center;
+}
+
+.contactFormWrap {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+
+  // reset default form styling
+  input,
+  select,
+  button,
+  textarea {
+    font-family: inherit;
+    font-size: 100%;
+    box-sizing: border-box;
+    padding: 1rem;
+  }
+}
+
+.contactForm {
+  width: 100%;
+}
+
+.contactFormHeader {
+  margin-bottom: 1rem;
+}
+
+.contactFormInput {
+  flex: 1;
+  background-color: $white;
+  color: $black;
+}
+
+.contactFormElement {
+  display: flex;
+  margin-left: 1rem;
+  margin-right: 1rem;
+  margin-bottom: 1rem;
+  @media screen and (max-width: $breakpoint-ptab) {
+    flex-direction: column;
+  }
+}
+
+.contactFormSubmit {
+  margin-left: auto;
+  margin-right: auto;
+  display: inline-block;
+  color: $offWhite;
+  background-color: $mainGold;
+  letter-spacing: 0.5rem;
+  border-radius: 40px;
+  border: none;
+  text-transform: uppercase;
+  font-size: 1.6rem;
+}
+
+.contactFormLabel {
+  margin-right: 1rem;
+  display: flex;
+  align-items: center;
+  @media screen and (max-width: $breakpoint-ptab) {
+    justify-content: center;
+  }
 }
