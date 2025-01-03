@@ -1,10 +1,10 @@
-import { Montserrat, Pacifico } from 'next/font/google'
- 
+import { Montserrat, Pacifico } from "next/font/google";
+
 export const montserrat = Montserrat({
-  subsets: ['latin'],
-})
- 
+  subsets: ["latin"],
+});
+
 export const pacifico = Pacifico({
-  subsets: ['latin'],
-  weight: '400',
-})
+  subsets: ["latin"],
+  weight: "400",
+});

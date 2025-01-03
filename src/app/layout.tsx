@@ -2,7 +2,7 @@ import type { Metadata } from "next";
 import Header from "./components/Header/Header";
 import Footer from "./components/Footer/Footer";
 import "./globals.scss";
-import { montserrat } from './fonts';
+import { montserrat } from "./fonts";
 
 export const metadata: Metadata = {
   title: "Create Next App",
