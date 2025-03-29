@@ -1,14 +1,14 @@
 "use client";
 
 import styles from "./page.module.scss";
-import { useRef } from "react";
 import { useFormStatus } from "react-dom";
 import TitleBlock from "@/app/components/TitleBlock/TitleBlock";
 import ContentWrap from "@/app/components/ContentWrap/ContentWrap";
+import { sendEmail } from "@/app/api/send/route";
 
 export default function Contact() {
   const { pending } = useFormStatus();
-  const refForm = useRef<HTMLFormElement>(null);
+
   return (
     <>
       <main className={`${styles.pageContainer} ${styles.content}`}>
@@ -18,13 +18,7 @@ export default function Contact() {
             <div className={`${styles.contactFormHeader}`}>
               Have a question? Please get in touch!
             </div>
-            <form
-              ref={refForm}
-              // action={
-              //   todo
-              // }
-              className={`${styles.contactForm}`}
-            >
+            <form action={sendEmail} className={`${styles.contactForm}`}>
               <input type="hidden" name="enquiry_number" />
               <div className={`${styles.contactFormElement}`}>
                 <label
@@ -55,6 +49,8 @@ export default function Contact() {
                   name="user_email"
                   placeholder="Enter your email..."
                   required
+                  // FIX THIS
+                  pattern="[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}"
                   type="email"
                 />
               </div>
@@ -71,6 +67,7 @@ export default function Contact() {
                   name="user_phone_number"
                   type="tel"
                   placeholder="Enter contact number..."
+                  pattern="[+0-9]{11,13}"
                   required
                 />
               </div>
