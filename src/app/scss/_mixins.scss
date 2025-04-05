@@ -1,3 +1,5 @@
+@import "./settings";
+
 @mixin heading() {
   color: $mainGold;
   line-height: 1.2;
@@ -5,5 +7,31 @@
   text-shadow: 0 0 10px $black;
   @media screen and (max-width: $breakpoint-mob) {
     font-size: 1.4rem;
+  }
+}
+
+// Hover events
+@mixin hover--colors($primary-color, $secondary-color) {
+  transition:
+    $base-trans-speed color ease-in-out,
+    $base-trans-speed border-color ease-in-out;
+  &:hover {
+    border-color: $secondary-color;
+    color: $secondary-color;
+  }
+}
+
+@mixin underline() {
+  &::after {
+    content: "";
+    display: block;
+    background-color: $mainGold;
+    width: 0;
+    height: 2px;
+    bottom: 0;
+    transition: width $base-trans-speed;
+  }
+  &:hover::after {
+    width: 100%;
   }
 }
