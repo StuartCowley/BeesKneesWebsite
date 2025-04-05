@@ -28,6 +28,7 @@
     text-decoration: none;
     color: $offWhite;
     margin-bottom: 12px;
+    @include hover--colors($offWhite, $mainGold);
     @media screen and (max-width: $breakpoint-ptab) {
       text-align: center;
     }

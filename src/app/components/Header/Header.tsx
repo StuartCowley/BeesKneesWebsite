@@ -19,9 +19,15 @@ export default function Header() {
           </div>
         </Link>
         <nav className={styles.header__nav}>
-          <Link href={"/testimonials"}>Testimonials</Link>
-          <Link href={"/song-list"}>Song List</Link>
-          <Link href={"/contact"}>Contact</Link>
+          <Link className={styles["header__nav--link"]} href={"/testimonials"}>
+            Testimonials
+          </Link>
+          <Link className={styles["header__nav--link"]} href={"/song-list"}>
+            Song List
+          </Link>
+          <Link className={styles["header__nav--link"]} href={"/contact"}>
+            Contact
+          </Link>
         </nav>
         <SocialBlock />
       </div>

@@ -1,4 +1,5 @@
 @import "../../scss/settings";
+@import "../../scss/mixins";
 
 .header {
   width: 100%;
@@ -21,6 +22,10 @@
     padding-left: 3.5rem;
     @media screen and (max-width: $breakpoint-ptab) {
       padding-left: 2.5rem;
+    }
+    &--link {
+      @include hover--colors($offWhite, $mainGold);
+      @include underline();
     }
   }
 
