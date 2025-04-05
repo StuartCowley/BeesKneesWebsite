@@ -1,0 +1,30 @@
+@import "../../scss/settings";
+@import "../../scss/mixins";
+
+.burgerMenu {
+  display: flex;
+  flex-direction: column;
+  gap: 0.8rem;
+  padding: 80px 50px 50px;
+  -webkit-font-smoothing: antialiased;
+  &__logo {
+    width: 5rem;
+    margin-left: auto;
+    margin-right: auto;
+    &-wrap {
+      width: 80px;
+      margin: 0 auto;
+    }
+    &-title {
+      color: $mainGold;
+      text-align: center;
+      line-height: 1.2;
+      text-shadow: 0 0 5px #000;
+    }
+  }
+
+  &__item {
+    font-size: 1.5rem;
+    @include hover--colors($offWhite, $mainGold);
+  }
+}
