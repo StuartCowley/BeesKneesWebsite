@@ -8,13 +8,22 @@
   justify-content: center;
 
   &__burgerMenuCross {
-    z-index: 10;
+    @media screen and (min-width: $breakpoint-ptab) {
+      display: none;
+    }
+  }
+
+  &__homeCta {
+    @media screen and (max-width: $breakpoint-ptab) {
+      display: none;
+    }
   }
 
   &__burgerMenuWrap {
     position: fixed;
     top: 0;
     left: 0;
+    z-index: 10;
     height: 100%;
     background-color: $black;
     transform: translate(-100%, 0);

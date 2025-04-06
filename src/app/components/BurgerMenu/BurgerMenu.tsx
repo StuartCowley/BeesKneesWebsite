@@ -4,10 +4,14 @@ import Bee from "@/app/components/images/Bee";
 import SocialBlock from "@/app/components/SocialBlock/SocialBlock";
 import { pacifico } from "@/app/fonts";
 
-export default function BurgerMenu() {
+interface BurgerMenuProps {
+  toggle: (val: boolean) => void;
+}
+
+export default function BurgerMenu({ toggle }: BurgerMenuProps) {
   return (
     <div className={`${styles["burgerMenu"]}`}>
-      <Link href="/">
+      <Link onClick={() => toggle(false)} href="/">
         <div className={`${styles["burgerMenu__logo-wrap"]}`}>
           <Bee />
         </div>
@@ -17,16 +21,28 @@ export default function BurgerMenu() {
           The Bees Knees
         </div>
       </Link>
-      <Link className={styles["burgerMenu__item"]} href={"/testimonials"}>
+      <Link
+        onClick={() => toggle(false)}
+        className={styles["burgerMenu__item"]}
+        href={"/testimonials"}
+      >
         Testimonials
       </Link>
-      <Link className={styles["burgerMenu__item"]} href={"/song-list"}>
+      <Link
+        onClick={() => toggle(false)}
+        className={styles["burgerMenu__item"]}
+        href={"/song-list"}
+      >
         Song List
       </Link>
-      <Link className={styles["burgerMenu__item"]} href={"/contact"}>
+      <Link
+        onClick={() => toggle(false)}
+        className={styles["burgerMenu__item"]}
+        href={"/contact"}
+      >
         Contact
       </Link>
-      <SocialBlock />
+      <SocialBlock toggle={toggle} />
     </div>
   );
 }

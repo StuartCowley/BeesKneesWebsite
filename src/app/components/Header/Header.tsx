@@ -17,16 +17,16 @@ export default function Header() {
       <div
         className={`${styles.header__burgerMenuWrap} ${burgerMenuOpen ? styles["header__burgerMenuWrap--open"] : ""}`}
       >
-        <BurgerMenu />
+        <BurgerMenu toggle={(val: boolean) => setBurgerMenuOpen(val)} />
       </div>
       <div className={`${styles.pageContainer} ${styles.header__wrap}`}>
-        <div className={`${styles["header__burgerMenuCross"]}`}>
+        <div className={`${styles.header__burgerMenuCross}`}>
           <NavCross
             isOpen={burgerMenuOpen}
             toggle={(val: boolean) => setBurgerMenuOpen(val)}
           />
         </div>
-        <Link href={"/"}>
+        <Link className={styles.header__homeCta} href={"/"}>
           <div className={`${styles.header__logoWrap} ${pacifico.className}`}>
             <Bee />
             <div className={styles.header__logoText}>
@@ -47,7 +47,7 @@ export default function Header() {
             Contact
           </Link>
         </nav>
-        <SocialBlock />
+        <SocialBlock toggle={(val: boolean) => setBurgerMenuOpen(val)} />
       </div>
     </header>
   );

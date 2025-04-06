@@ -35,7 +35,8 @@ export default function Footer() {
               Professional party band
             </div>
           </div>
-          <SocialBlock />
+          {/*Temp: Move isMenuOpen into a context, refactor and rebase this commit */}
+          {/*<SocialBlock />*/}
         </div>
         <div className={styles.footer__copyright}>
           <p>&copy; The Bees Knees {currentYear}</p>
