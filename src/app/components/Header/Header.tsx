@@ -6,25 +6,22 @@ import SocialBlock from "../SocialBlock/SocialBlock";
 import styles from "./header.module.scss";
 import { pacifico } from "@/app/fonts";
 import BurgerMenu from "@/app/components/BurgerMenu/BurgerMenu";
-import { useState } from "react";
 import NavCross from "@/app/components/BurgerMenu/NavCross/NavCross";
+import { useMenu } from "@/hooks/useMenu";
 
 export default function Header() {
-  const [burgerMenuOpen, setBurgerMenuOpen] = useState(false);
+  const { isOpen, setIsOpen } = useMenu();
 
   return (
     <header className={styles.header}>
       <div
-        className={`${styles.header__burgerMenuWrap} ${burgerMenuOpen ? styles["header__burgerMenuWrap--open"] : ""}`}
+        className={`${styles.header__burgerMenuWrap} ${isOpen ? styles["header__burgerMenuWrap--open"] : ""}`}
       >
-        <BurgerMenu toggle={(val: boolean) => setBurgerMenuOpen(val)} />
+        <BurgerMenu toggle={(val: boolean) => setIsOpen(val)} />
       </div>
       <div className={`${styles.pageContainer} ${styles.header__wrap}`}>
         <div className={`${styles.header__burgerMenuCross}`}>
-          <NavCross
-            isOpen={burgerMenuOpen}
-            toggle={(val: boolean) => setBurgerMenuOpen(val)}
-          />
+          <NavCross isOpen={isOpen} toggle={(val: boolean) => setIsOpen(val)} />
         </div>
         <Link className={styles.header__homeCta} href={"/"}>
           <div className={`${styles.header__logoWrap} ${pacifico.className}`}>
@@ -37,17 +34,29 @@ export default function Header() {
           </div>
         </Link>
         <nav className={styles.header__nav}>
-          <Link className={styles["header__nav--link"]} href={"/testimonials"}>
+          <Link
+            className={styles["header__nav--link"]}
+            href={"/testimonials"}
+            onClick={() => setIsOpen(false)}
+          >
             Testimonials
           </Link>
-          <Link className={styles["header__nav--link"]} href={"/song-list"}>
+          <Link
+            className={styles["header__nav--link"]}
+            href={"/song-list"}
+            onClick={() => setIsOpen(false)}
+          >
             Song List
           </Link>
-          <Link className={styles["header__nav--link"]} href={"/contact"}>
+          <Link
+            className={styles["header__nav--link"]}
+            href={"/contact"}
+            onClick={() => setIsOpen(false)}
+          >
             Contact
           </Link>
         </nav>
-        <SocialBlock toggle={(val: boolean) => setBurgerMenuOpen(val)} />
+        <SocialBlock toggle={(val: boolean) => setIsOpen(val)} />
       </div>
     </header>
   );

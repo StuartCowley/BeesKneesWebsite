@@ -3,6 +3,8 @@ import Header from "./components/Header/Header";
 import Footer from "./components/Footer/Footer";
 import "./globals.scss";
 import { montserrat } from "./fonts";
+import React from "react";
+import { MenuProvider } from "@/contexts/MenuContext";
 
 export const metadata: Metadata = {
   title: "Create Next App",
@@ -17,9 +19,11 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body className={montserrat.className}>
-        <Header />
-        {children}
-        <Footer />
+        <MenuProvider>
+          <Header />
+          {children}
+          <Footer />
+        </MenuProvider>
       </body>
     </html>
   );
