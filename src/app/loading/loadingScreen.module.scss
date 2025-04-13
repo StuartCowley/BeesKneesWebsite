@@ -1,0 +1,78 @@
+@import "../scss/settings";
+
+.loadingScreen {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-color: $almostBlack;
+  z-index: 10;
+  justify-content: center;
+  display: flex;
+  align-items: center;
+  opacity: 0.85;
+
+  &__contentWrap {
+    display: flex;
+    flex-direction: column;
+    color: $mainGold;
+  }
+}
+
+.spinner {
+  &__textWrap {
+    height: 1rem;
+  }
+  &:after {
+    content: "";
+    display: inline-block;
+    width: 48px;
+    height: 48px;
+    margin: 8px;
+    border-radius: 50%;
+    background: $mainGold;
+    animation: coin-flip 2.4s cubic-bezier(1, 1, 0.8, 1) infinite;
+  }
+}
+
+.ellipsis {
+  display: inline-block;
+  position: relative;
+}
+
+.ellipsis:after {
+  content: "";
+  height: 1rem;
+  position: absolute;
+  top: 0;
+  right: 0;
+  background-color: $almostBlack;
+  animation: ellipsis 2s cubic-bezier(0, 0, 0.8, 1) infinite;
+}
+
+@keyframes coin-flip {
+  0%,
+  100% {
+    animation-timing-function: cubic-bezier(0.5, 0, 1, 0.5);
+  }
+  0% {
+    transform: rotateY(0deg);
+  }
+  50% {
+    transform: rotateY(1800deg);
+    animation-timing-function: cubic-bezier(0, 0.5, 0.5, 1);
+  }
+  100% {
+    transform: rotateY(3600deg);
+  }
+}
+
+@keyframes ellipsis {
+  0% {
+    width: 100%;
+  }
+  100% {
+    width: 0;
+  }
+}
